@@ -47,7 +47,7 @@ const BlogList: React.FC<HomeProps> = ({
       {!errorNoKeys && (
         <>
           <Head>
-            <title>Categories List</title>
+            <title>Frequently asked questions</title>
             <meta name="description" content="React Bricks blog starter" />
           </Head>
           {headerOk && !errorHeader ? (
