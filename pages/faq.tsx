@@ -5,7 +5,6 @@ import {
   cleanPage,
   fetchPage,
   fetchPages,
-  fetchTags,
   types,
   useReactBricksContext,
 } from 'react-bricks/frontend'
@@ -40,7 +39,7 @@ const BlogList: React.FC<HomeProps> = ({
   const footerOk = footer ? cleanPage(footer, pageTypes, bricks) : null
 
   categories = categories.sort(
-    (prev, next) => prev.customValues.order - next.customValues.order
+    (next, curr) => next.customValues.order - curr.customValues.order
   )
 
   return (

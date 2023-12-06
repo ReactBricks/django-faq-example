@@ -15,7 +15,7 @@ interface CategoryProps {
 
 const Category: React.FC<CategoryProps> = ({ category, faqs }) => {
   const [showFaqs, setShowFaqs] = useState<boolean>(false)
-  faqs = faqs.sort((prev, next) => prev.props.order - next.props.order)
+  faqs = faqs.sort((next, curr) => next.props.order - curr.props.order)
   return (
     <button className="w-full">
       <div
